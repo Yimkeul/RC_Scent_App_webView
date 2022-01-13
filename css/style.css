@@ -14,7 +14,7 @@ html,body{
   height: 100vh;
 }
 .overlay {
-  background: rgba(0,0,0,0.7 );
+  background: rgba(0, 0, 0, 0.27);
   position: absolute;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ html,body{
 .main-home {
   background-image: url("../assets/intro.png");
   background-size: cover;
-  background-position: center 0;
+  /* background-position: center center; */
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
