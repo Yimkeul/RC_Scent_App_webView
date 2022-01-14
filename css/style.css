@@ -109,13 +109,14 @@ body {
 
 #tt{
   position: relative;
-  padding-top: 25vh;
+  text-align: center;
+  padding-top: 10vh;
 }
 
 #tt_h2{
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  margin-top: 0;
+  /* margin-top: 0; */
   font-size: 25px;
   color: rgba(252, 252, 252, 0.747)
 }
@@ -133,6 +134,7 @@ body {
   padding: 13px 22px;
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
+  
 }
 
 .btn:hover {
@@ -143,8 +145,17 @@ body {
 }
 
 
+#bbb{
+  position: inherit;
+  text-align: center;
+  
+  
+}
 
 
+#add_blank{
+  padding-top: 65vh;
+}
 
 
 
