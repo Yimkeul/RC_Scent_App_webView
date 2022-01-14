@@ -8,6 +8,7 @@
 }
 
 
+
 a {
 
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -34,14 +35,14 @@ body {
 
 .loading-container,
 .loading {
-  height: 150px;
+  height: 50px;
   position: relative;
-  width: 150px;
+  width: 50px;
   border-radius: 100%;
 }
 
 .loading-container {
-  padding-top: 32vh;
+  padding-top: 40vh;
   margin: 40px auto;
 }
 
@@ -91,7 +92,7 @@ body {
 }
 
 .main-home {
-  background-image: url("../assets/intro.png");
+  background-image: url("../assets/intro_2.png");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -108,7 +109,7 @@ body {
 
 #tt{
   position: relative;
-  padding-top: 38vh;
+  padding-top: 25vh;
 }
 
 #tt_h2{
