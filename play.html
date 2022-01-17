@@ -162,9 +162,9 @@
             prediction[i].probability.toFixed(2);
           labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-      }
 
-      $(document).ready(function () {});
+        window.postMessage(resultMessage)
+      }
     </script>
 
     <script>
