@@ -58,8 +58,10 @@ body {
   padding-bottom: 5%;
 }
 .drag-text h3 {
-  font-weight: 500;
+  /* font-weight: 500; */
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
 }
 
 .file-upload-content {
