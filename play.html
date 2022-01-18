@@ -165,8 +165,13 @@
         }
 
         window.ReactNativeWebView.postMessage(resultMessage)
-        console.log("qq")
+
         
+      }
+
+      async function reload(){
+        window.location.reload()
+        window.ReactNativeWebView.postMessage(undefined)
       }
     </script>
 
