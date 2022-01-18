@@ -1,46 +1,47 @@
-/* body {
-  font-family: sans-serif;
-  background-color: #eeeeee;
-} */
-
-
 input:focus{
   outline: none;
   -webkit-tap-highlight-color : transparent
   
 }
 
-/* ::-webkit-scrollbar {
-  -webkit-appearance: none;
-} */
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-  }
-
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  overflow-y: hidden; 
-  background-color: rgb(140, 140, 140);
+html,body{
+  padding : 0;
+  margin : 0;
+  overflow : hidden;
 }
+
+#con{
+  background: rgb(140,140,140);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
 .file-upload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
   width: 80%;
-  padding: 9% 3%;
-  margin: 5vh auto 10vh;
+  height: 99%;
+
   border-radius: 10px;
   border: solid 1.5px #f6f7fa;
   background-color: #f6f7fa;
+
+
 }
 
 .image-upload-wrap {
-  width: 80%;
-  height: 75%;
-  margin: 0 auto;
+  width: 90%;
+  height: 50%;
+  margin: auto;
   position: relative;
+  top: 15%;
   object-fit: contain;
+
   border-radius: 10px;
   border: dashed 1.5px #35465d;
   background-color: #ffffff;
@@ -50,26 +51,27 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   outline: none;
   opacity: 0;
   cursor: pointer;
 }
-#check_loading {
 
+
+#check_loading {
  display: none;
- margin: 3% 0;
 }
 .drag-text {
   text-align: center;
+  margin: 30% 0;
 }
-.tt{
-  margin-top: 45%;
-  padding-bottom: 5%;
+
+.upload_img{
+ padding-bottom: 10%;
 }
+
 .drag-text h3 {
-  /* font-weight: 500; */
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
@@ -78,18 +80,19 @@ body {
 .file-upload-content {
   display: none;
   text-align: center;
-
 }
+
 #loading {
-  margin: 3% 0;
+  /* margin: 2% 0; */
   display: none;
 }
 
 .file-upload-image {
-  height: 60%;
   width: 80%;
+  height: 60%;
+  margin: 5% auto;
+  
 
-  /* padding: 10px; */
 }
 
 .image-dropping,
