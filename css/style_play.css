@@ -10,9 +10,14 @@ input:focus{
   
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   -webkit-appearance: none;
-}
+} */
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+  }
 
 body {
   padding: 0;
