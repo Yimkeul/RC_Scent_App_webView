@@ -1,46 +1,42 @@
-input:focus{
+input:focus {
   outline: none;
-  -webkit-tap-highlight-color : transparent
-  
+  -webkit-tap-highlight-color: transparent;
 }
 
-html,body{
-  padding : 0;
-  margin : 0;
-  overflow : hidden;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-#con{
-  background: rgb(140,140,140);
+#con {
+  background: rgb(140, 140, 140);
   width: 100vw;
   height: 100vh;
   position: relative;
 }
 
-
 .file-upload {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   width: 80%;
-  height: 99%;
+  height: 60%;
 
   border-radius: 10px;
   border: solid 1.5px #f6f7fa;
   background-color: #f6f7fa;
-
-
 }
 
 .image-upload-wrap {
   width: 90%;
-  height: 50%;
-  margin: auto;
-  position: relative;
-  top: 15%;
-  object-fit: contain;
+  height: 90%;
+
+  margin: 5% auto;
+
 
   border-radius: 10px;
   border: dashed 1.5px #35465d;
@@ -51,29 +47,39 @@ html,body{
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   outline: none;
   opacity: 0;
   cursor: pointer;
 }
 
-
 #check_loading {
- display: none;
+  display: none;
 }
 .drag-text {
+  width: 100%;
+  height: 100%;
   text-align: center;
-  margin: 30% 0;
+  /* margin: 30% 0; */
 }
 
-.upload_img{
- padding-bottom: 10%;
+.upload_img {
+  position: absolute;
+  margin: 0;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
 }
 
 .drag-text h3 {
+  position: absolute;
+  margin: 0;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
 }
 
@@ -91,8 +97,6 @@ html,body{
   width: 80%;
   height: 60%;
   margin: 5% auto;
-  
-
 }
 
 .image-dropping,
