@@ -150,18 +150,13 @@
             resultMessage = "미니멀";
             break;
           case "formal":
-            resultMessage = "포멀";
-            break;
-            case "chic":
-            resultMessage = "시크";
-            break;
-          case "feminin":
-            resultMessage = "페미닌";
+            resultMessage = "댄디";
             break;
             case "casual":
             resultMessage = "캐주얼";
             break;
         }
+        console.log(resultMessage)
         $(".result-message").html(resultMessage);
         for (let i = 0; i < maxPredictions; i++) {
           const classPrediction =
