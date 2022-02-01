@@ -159,7 +159,8 @@
         }
         console.log(resultMessage)
         $(".result-message").html(resultMessage);
-        window.ReactNativeWebView.postMessage(resultMessage);
+        // window.ReactNativeWebView.postMessage(resultMessage);
+        window.ReactNativeWebView.postMessage(prediction);
         window.postMessage(resultMessage);
         // for (let i = 0; i < maxPredictions; i++) {
         //   const classPrediction =
