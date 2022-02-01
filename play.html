@@ -138,6 +138,7 @@
         prediction.sort(
           (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
         );
+        console.log(prediction)
         var resultMessage;
         switch (prediction[0].className) {
           case "dandy":
@@ -159,13 +160,14 @@
         console.log(resultMessage)
         $(".result-message").html(resultMessage);
         window.ReactNativeWebView.postMessage(resultMessage);
-        for (let i = 0; i < maxPredictions; i++) {
-          const classPrediction =
-            prediction[i].className +
-            ": " +
-            prediction[i].probability.toFixed(2);
-          labelContainer.childNodes[i].innerHTML = classPrediction;
-        }
+        window.postMessage(resultMessage);
+        // for (let i = 0; i < maxPredictions; i++) {
+        //   const classPrediction =
+        //     prediction[i].className +
+        //     ": " +
+        //     prediction[i].probability.toFixed(2);
+        //   labelContainer.childNodes[i].innerHTML = classPrediction;
+        // }
 
   
       }
