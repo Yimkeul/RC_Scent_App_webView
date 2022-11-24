@@ -109,7 +109,8 @@
     <script src="./js/custom.js"></script>
 
     <script type="text/javascript">
-      const URL = "./my_model/";
+      // const URL = "./my_model/";
+      const URL = "https://teachablemachine.withgoogle.com/models/eTFfdq4Mn/";
 
       let model, labelContainer, maxPredictions;
 
@@ -138,17 +139,28 @@
         prediction.sort(
           (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
         );
-        console.log(prediction)
+        console.log(prediction);
         var resultMessage;
         switch (prediction[0].className) {
+          // case "dandy":
+          //   resultMessage = "댄디";
+          //   break;
+          // case "street":
+          //   resultMessage = "스트릿";
+          //   break;
+          // case "minimal":
+          //   resultMessage = "미니멀";
+          //   break;
+          // case "formal":
+          //   resultMessage = "댄디";
+          //   break;
+          // case "casual":
+          //   resultMessage = "캐주얼";
           case "dandy":
             resultMessage = "댄디";
             break;
           case "street":
             resultMessage = "스트릿";
-            break;
-          case "minimal":
-            resultMessage = "미니멀";
             break;
           case "formal":
             resultMessage = "댄디";
@@ -157,7 +169,7 @@
             resultMessage = "캐주얼";
             break;
         }
-        console.log(resultMessage)
+        console.log(resultMessage);
         $(".result-message").html(resultMessage);
         // window.ReactNativeWebView.postMessage(resultMessage);
         window.ReactNativeWebView.postMessage(resultMessage);
@@ -169,8 +181,6 @@
         //     prediction[i].probability.toFixed(2);
         //   labelContainer.childNodes[i].innerHTML = classPrediction;
         // }
-
-  
       }
 
       async function reload() {
